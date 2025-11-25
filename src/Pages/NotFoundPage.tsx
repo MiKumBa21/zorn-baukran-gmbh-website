@@ -1,11 +1,11 @@
 import Header from "../Components/Header/Header";
 
-function Home() {
+function NotFoundPage() {
     return (
         <div>
             <Header></Header>
-            <h1>Home</h1>
+            <h1>NotFoundPage</h1>
         </div>
     );
-}
-export default Home;
+}  
+export default NotFoundPage;

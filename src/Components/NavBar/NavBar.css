@@ -22,6 +22,7 @@
 .nav-link:hover ,.nav-link:active {
     color: rgb(255, 187, 0);
     transform: translateY(-1px);
+    background: rgba(0,0,0,0.05);
 }
 
 .dropdown-menu {
@@ -37,6 +38,19 @@
 }
 
 .dropdown-item:hover, .dropdown-item:active {
-    background-color: gray;
     color: rgb(255, 187, 0);
+    background: rgba(0,0,0,0.05);
+}
+
+@media (hover: hover) and (min-width: 768px) {
+  .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;              /* sichtbar machen */
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Optional: Active-Look beim Hover auf dem Toggler */
+  .nav-item.dropdown:hover > .nav-link {
+    background: rgba(0,0,0,0.05);
+  }
 }
