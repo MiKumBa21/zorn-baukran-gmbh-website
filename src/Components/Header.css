@@ -1,0 +1,14 @@
+.header-container {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.header-img {
+    height: 75px;
+    width: auto;
+}
