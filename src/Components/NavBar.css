@@ -11,10 +11,32 @@
     margin: 0 10 0 10px;
 }
 
-.nav-link:hover {
+.nav-link:link {
     color: white;
-    
-    border-radius: 15px;
-    background-color: rgb(255, 187, 0);
 }
 
+.nav-link:visited {
+    color: white;
+}
+
+.nav-link:hover ,.nav-link:active {
+    color: rgb(255, 187, 0);
+    transform: translateY(-1px);
+}
+
+.dropdown-menu {
+    background-color: gray;
+}
+
+.dropdown-item:link {
+    color: white;
+}
+
+.dropdown-item:visited {
+    color: white;
+}
+
+.dropdown-item:hover, .dropdown-item:active {
+    background-color: gray;
+    color: rgb(255, 187, 0);
+}
