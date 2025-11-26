@@ -1,13 +1,13 @@
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
-import ConstCranes from './Pages/Cranes/ConstCranes';
-import Contact from './Pages/Contact';
-import Cranes from './Pages/Cranes';
-import Eurogru from './Pages/Eurogru';
-import Home from './Pages/Home';
-import MobilCranes from './Pages/Cranes/MobilCranes';
-import QuickErectCranes from './Pages/Cranes/QuickErectCranes';
-import UsedCranes from './Pages/UsedCranes';
-import NotFoundPage from './Pages/NotFoundPage';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ConstCranes from './Pages/Cranes/ConstCranes/ConstCranes';
+import Contact from './Pages/Contact/Contact';
+import Cranes from './Pages/Cranes/Cranes';
+import Eurogru from './Pages/Eurogru/Eurogru';
+import Home from './Pages/Home/Home';
+import MobilCranes from './Pages/Cranes/MobilCranes/MobilCranes';
+import QuickErectCranes from './Pages/Cranes/QuickErectCranes/QuickErectCranes';
+import UsedCranes from './Pages/UsedCranes/UsedCranes';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 
 
 const router = createBrowserRouter([
