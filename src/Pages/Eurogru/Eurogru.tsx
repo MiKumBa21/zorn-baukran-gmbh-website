@@ -1,10 +1,11 @@
 import Header from "../../Components/Header/Header";
+import Headline1 from "../../Components/Headline/Headline";
 
 function Eurogru() {
     return (
         <div>
             <Header></Header>
-            <h1>Eurogru</h1>
+            <Headline1 text='Eurogru - Partner' ></Headline1>
         </div>
     );
 }  
