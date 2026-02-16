@@ -52,6 +52,7 @@
 .card-table-cell {
     display: table-cell;
     padding: 6px 10px;
+    
 }
 
 .card-table-cell.label {

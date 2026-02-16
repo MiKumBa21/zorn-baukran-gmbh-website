@@ -2,7 +2,7 @@ import './HorizontalCard.css';
 import DownloadButton from '../../Button/DownloadButton';
 
 function HorizontalCard(props: any) {
-    const showOptional = props.showOptional ?? false;
+    const showUsedCraneOptions = props.showUsedCraneOptions ?? false;
 
     return (
         <div className="card mb-3">
@@ -20,7 +20,7 @@ function HorizontalCard(props: any) {
                             <div className='card-table-row'>
                                 <div className='card-table-cell label'>Ausladung</div>
                                 <div className='card-table-cell value'>{props.ausladung}m</div>
-                                {showOptional && (
+                                {showUsedCraneOptions && (
                                     <div className='card-table-cell value'>Preis auf Anfrage</div>)
                                 }
                             </div>
@@ -39,7 +39,7 @@ function HorizontalCard(props: any) {
                                     <DownloadButton text="Datenblatt" path={props.dataSheet}></DownloadButton>
                                 </div>
                             </div>
-                            {showOptional && (
+                            {showUsedCraneOptions && (
                                 <div className='card-table-row'>
                                     <div className='card-table-cell label'>Beschreibung</div>
                                     <div className='card-table-cell value'>{props.beschreibung}</div>
