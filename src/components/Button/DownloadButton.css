@@ -1,16 +1,16 @@
 button {
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 8px 14px;
     align-self: flex-start;
     margin: 6px;
-    background-color: rgb(255, 187, 0);
+    background-color: var(--color-yellow);
     border: none;
-    color: black;
+    color: var(--color-black);
     font-weight: 500;
 }
 
 button:hover {
-    background-color: rgb(255, 170, 0);
-    color: black;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
     border: none;
 }

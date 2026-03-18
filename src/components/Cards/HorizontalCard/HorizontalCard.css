@@ -1,0 +1,15 @@
+.horizontal-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: var(--transition);
+    width: var(--max-width);
+    align-items: center;
+    margin: 30px auto;
+}
+
+.horizontal-card:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-3px);
+}

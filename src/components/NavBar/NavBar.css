@@ -1,56 +1,64 @@
-.nav {
-    padding: 20px;
-    display: inline-flex;
-    gap: 0.5rem;
-    width: fit-content;
-    margin: 0 auto;
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: auto;
+    text-align: center;
 }
 
 .nav-link {
-    color: white;
-    margin: 0 10 0 10px;
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: var(--font-text);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    padding: 8px 16px;
 }
 
-.nav-link:link {
-    color: white;
+.nav-link:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    transition: var(--transition);
 }
 
-.nav-link:visited {
-    color: white;
-}
-
-.nav-link:hover ,.nav-link:active {
-    color: rgb(255, 187, 0);
-    transform: translateY(-1px);
-    background: rgba(0,0,0,0.05);
+.nav-item {
+    position: relative;
 }
 
 .dropdown-menu {
-    background-color: gray;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-gray);
+    border-radius: var(--radius);
+    padding: 6px 0;
+    list-style: none;
+    margin: 8px 0 0;
+    min-width: 200px;
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.dropdown-item:link {
-    color: white;
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
-.dropdown-item:visited {
-    color: white;
+.dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-size: 18px;
+    white-space: nowrap;
 }
 
-.dropdown-item:hover, .dropdown-item:active {
-    color: rgb(255, 187, 0);
-    background: rgba(0,0,0,0.05);
-}
-
-@media (hover: hover) and (min-width: 768px) {
-  .nav-item.dropdown:hover > .dropdown-menu {
-    display: block;              /* sichtbar machen */
-    visibility: visible;
-    opacity: 1;
-  }
-
-  /* Optional: Active-Look beim Hover auf dem Toggler */
-  .nav-item.dropdown:hover > .nav-link {
-    background: rgba(0,0,0,0.05);
-  }
+.dropdown-item:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    border-radius: 6px;
 }

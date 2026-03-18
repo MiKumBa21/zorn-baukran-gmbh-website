@@ -1,4 +1,4 @@
-import "./DownloadButton.css"
+import "./DownloadButton.css";
 
 const downloadFile = (path: string) => {
     const link = document.createElement('a');

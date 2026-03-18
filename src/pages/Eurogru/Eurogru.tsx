@@ -1,11 +1,13 @@
-import Header from "../../components/Header/Header";
-import Headline1 from "../../components/Headline/Headline";
+import { Headline1 } from "../../components/Headline/Headline";
+import Layout from "../../components/Layout/Layout";
 
 function Eurogru() {
     return (
         <div>
-            <Header></Header>
-            <Headline1 text='Eurogru - Partner' ></Headline1>
+            <Layout>
+                <Headline1 text='Eurogru - Partner' ></Headline1>
+            </Layout>
+            
         </div>
     );
 }  

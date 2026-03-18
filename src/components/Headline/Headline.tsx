@@ -1,11 +1,25 @@
 import './Headline.css';
 
+interface HeadlineProps {
+    text: string;
+    subtitle?: string;
+}
 
-function Headline1(props: any) {
+export function Headline1(props: HeadlineProps) {
     return (
-        <div className="headline1">
+        <div className="headline">
             <h1>{props.text}</h1>
+            {props.subtitle && <p>{props.subtitle}</p>}
         </div>
     );
 }
-export default Headline1;
+
+export function Headline2(props: HeadlineProps) {
+    return (
+        <div className="headline">
+            <h2>{props.text}</h2>
+            {props.subtitle && <p>{props.subtitle}</p>}
+        </div>
+    );
+}
+

@@ -1,4 +1,3 @@
-import "./BigCard.css";
 import { Link } from 'react-router-dom';
 
 function BigCard(props: any) {

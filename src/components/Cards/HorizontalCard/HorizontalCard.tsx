@@ -1,12 +1,12 @@
-import './HorizontalCard.css';
+import "./HorizontalCard.css";
 import DownloadButton from '../../Button/DownloadButton';
 
 function HorizontalCard(props: any) {
     const showUsedCraneOptions = props.showUsedCraneOptions ?? false;
 
     return (
-        <div className="card mb-3">
-            <div className="row g-0">
+        <div className="horizontal-card">
+            <div className="card-body">
                 <div className="col-md-4">
                     <img src={props.imgSrc} className="img-fluid rounded-start" alt="Bild" />
                 </div>

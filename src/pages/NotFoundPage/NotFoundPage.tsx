@@ -1,10 +1,11 @@
-import Header from "../../components/Header/Header";
+import Layout from "../../components/Layout/Layout";
 
 function NotFoundPage() {
     return (
         <div>
-            <Header></Header>
-            <h1>NotFoundPage</h1>
+            <Layout>
+                <h1>NotFoundPage</h1>
+            </Layout>
         </div>
     );
 }  

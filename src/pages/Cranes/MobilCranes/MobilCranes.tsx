@@ -1,16 +1,19 @@
-import Header from "../../../components/Header/Header";
-import Headline1 from "../../../components/Headline/Headline";  
-import HorizontalCard from "../../../components/Cards/horizontal Cards/HorizontalCard";
+import { Headline1 } from "../../../components/Headline/Headline";  
+import HorizontalCard from "../../../components/Cards/HorizontalCard/HorizontalCard";
+import cranesData from '../../../data/cranes.json';
+import Layout from "../../../components/Layout/Layout";
 
 function MobilCranes() {
     return (
         <div>
-            <Header></Header>
-
-            <Headline1 text='Baukrane' ></Headline1>
-
-            <HorizontalCard imgSrc={null} title={"MK 45"} marke={"Liebherr"} maxLast={6000} spitzenLast={1500} hakenhöhe={17.7} ausladung={27} dataSheet={null}></HorizontalCard>
-            </div>
+            <Layout>
+                <Headline1 text='Mobilkrane' ></Headline1>
+            
+                {cranesData.mobilCranes.map(crane => (
+                <HorizontalCard key={crane.id} {...crane} />
+                ))}
+            </Layout>
+        </div>
     );
 }  
 export default MobilCranes;

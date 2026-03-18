@@ -1,0 +1,40 @@
+{
+  "constCranes": [
+    { "id": "lh26k",   "title": "LH 26K",   "marke": "Liebherr", "maxLast": 2500, "spitzenLast": 1100, "hakenhöhe": 20, "ausladung": 26, "imgSrc": null, "dataSheet": null },
+    { "id": "lh45se",  "title": "LH 45 SE",  "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1500, "hakenhöhe": 27, "ausladung": 17.7, "imgSrc": null, "dataSheet": null },
+    { "id": "lh32k",   "title": "LH 32K",   "marke": "Liebherr", "maxLast": 3500, "spitzenLast": 1000, "hakenhöhe": 22,   "ausladung": 30, "imgSrc": null, "dataSheet": null },
+    { "id": "e3010",   "title": "E 3010",   "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1050, "hakenhöhe": 21.5, "ausladung": 30, "imgSrc": "/assets/Images/Cranes/ConstCranes/E3010.svg",  "dataSheet": "/assets/Datasheets/ConstCranes/E3010.pdf" },
+    { "id": "e3310",   "title": "E 3310",   "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1000, "hakenhöhe": 20,   "ausladung": 33, "imgSrc": null, "dataSheet": "/assets/Datasheets/ConstCranes/E3310.pdf" },
+    { "id": "lh45k",   "title": "LH 45K",   "marke": "Liebherr", "maxLast": 4000, "spitzenLast": 1250, "hakenhöhe": 22,   "ausladung": 36, "imgSrc": null, "dataSheet": null },
+    { "id": "e3810",   "title": "E 3810",   "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1000, "hakenhöhe": 22,   "ausladung": 38, "imgSrc": null, "dataSheet": "/assets/Datasheets/ConstCranes/E3810.pdf" },
+    { "id": "e4014",   "title": "E 4014",   "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1400, "hakenhöhe": 22.5, "ausladung": 40, "imgSrc": null, "dataSheet": "/assets/Datasheets/ConstCranes/E4014.pdf" },
+    { "id": "lh65k",   "title": "LH 65K",   "marke": "Liebherr", "maxLast": 4500, "spitzenLast": 1400, "hakenhöhe": 34.5, "ausladung": 40, "imgSrc": null, "dataSheet": null },
+    { "id": "e4210",   "title": "E 4210",   "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1000, "hakenhöhe": 22,   "ausladung": 42, "imgSrc": "/assets/Images/Cranes/ConstCranes/E4210.svg",  "dataSheet": "/assets/Datasheets/ConstCranes/E4210.pdf" },
+    { "id": "lh71k",   "title": "LH 71K",   "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1200, "hakenhöhe": 35,   "ausladung": 45, "imgSrc": null, "dataSheet": null },
+    { "id": "e4510",   "title": "E 4510",   "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1000, "hakenhöhe": 24,   "ausladung": 45, "imgSrc": null, "dataSheet": "/assets/Datasheets/ConstCranes/E4510.pdf" },
+    { "id": "lh81k",   "title": "LH 81K",   "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1400, "hakenhöhe": 40.5, "ausladung": 45, "imgSrc": null, "dataSheet": null },
+    { "id": "lh811k",  "title": "LH 81.1K", "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1350, "hakenhöhe": 40.5, "ausladung": 48, "imgSrc": null, "dataSheet": null },
+    { "id": "lh125k",  "title": "LH 125K",  "marke": "Liebherr", "maxLast": 8000, "spitzenLast": 1300, "hakenhöhe": 41.5, "ausladung": 55, "imgSrc": null, "dataSheet": null }
+  ],
+  "quickErectCranes": [
+    { "id": "ds245v", "title": "DS 245V", "marke": "Eurogru", "maxLast": 1800, "spitzenLast": 500, "hakenhöhe": 16.2, "ausladung": 24, "imgSrc": "/assets/Images/Cranes/QuickErectCranes/DS245V.svg", "dataSheet": "/assets/Datasheets/QuickErectCranes/DS245V.pdf" },
+    { "id": "ds266v", "title": "DS 266V", "marke": "Eurogru", "maxLast": 1800, "spitzenLast": 600, "hakenhöhe": 18.5, "ausladung": 25.5, "imgSrc": null, "dataSheet": null },
+    { "id": "ds267",  "title": "DS 267",  "marke": "Eurogru", "maxLast": 2500, "spitzenLast": 750, "hakenhöhe": 21,   "ausladung": 26,  "imgSrc": null, "dataSheet": "/assets/Datasheets/QuickErectCranes/DS267.pdf" },
+    { "id": "ds278",  "title": "DS 278",  "marke": "Eurogru", "maxLast": 2500, "spitzenLast": 850, "hakenhöhe": 21.8, "ausladung": 27,  "imgSrc": null, "dataSheet": "/assets/Datasheets/QuickErectCranes/DS278.pdf" },
+    { "id": "ds318",  "title": "DS 318",  "marke": "Eurogru", "maxLast": 3000, "spitzenLast": 800, "hakenhöhe": 21,   "ausladung": 31,  "imgSrc": "/assets/Images/Cranes/QuickErectCranes/DS318.svg", "dataSheet": "/assets/Datasheets/QuickErectCranes/DS318.pdf" }
+  ],
+  "mobilCranes": [
+    { "id": "mk45", "title": "MK 45", "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1500, "hakenhöhe": 27, "ausladung": 17.7, "imgSrc": null, "dataSheet": null }
+  ],
+  "usedCranes": [
+    { "id": "used-lh26k",  "title": "LH 26K",  "marke": "Liebherr", "maxLast": 2500, "spitzenLast": 1100, "hakenhöhe": 20,   "ausladung": 26, "imgSrc": null, "dataSheet": null, "beschreibung": "Top gewartet und einsatzbereit", "baujahr": "1999" },
+    { "id": "used-e3010",  "title": "E 3010",  "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1050, "hakenhöhe": 21.5, "ausladung": 30, "imgSrc": null, "dataSheet": null, "beschreibung": "Top gewartet und einsatzbereit", "baujahr": "2016" },
+    { "id": "used-e3310",  "title": "E 3310",  "marke": "Eurogru",  "maxLast": 4000, "spitzenLast": 1000, "hakenhöhe": 20,   "ausladung": 33, "imgSrc": null, "dataSheet": null, "beschreibung": "Top gewartet und einsatzbereit", "baujahr": "2006" },
+    { "id": "used-lh45k",  "title": "LH 45K",  "marke": "Liebherr", "maxLast": 4000, "spitzenLast": 1250, "hakenhöhe": 22,   "ausladung": 36, "imgSrc": null, "dataSheet": null, "beschreibung": "Top gewartet und einsatzbereit, Hub-FU neu", "baujahr": "1994" },
+    { "id": "used-lh71k",  "title": "LH 71K",  "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1200, "hakenhöhe": 35,   "ausladung": 45, "imgSrc": null, "dataSheet": null, "beschreibung": "Top gewartet und einsatzbereit", "baujahr": "2007" },
+    { "id": "used-lh81k",  "title": "LH 81K",  "marke": "Liebherr", "maxLast": 6000, "spitzenLast": 1400, "hakenhöhe": 40.5, "ausladung": 45, "imgSrc": null, "dataSheet": null, "beschreibung": "Top gewartet und einsatzbereit", "baujahr": "Verschiedene Baujahre" }
+  ],
+  "galleryImages": [
+    
+  ]
+}

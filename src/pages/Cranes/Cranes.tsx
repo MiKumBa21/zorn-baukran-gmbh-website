@@ -1,23 +1,22 @@
-import BigCard from "../../components/Cards/big Cards/BigCard";
-import Header from "../../components/Header/Header";
-import "./Cranes.css";
+import BigCard from "../../components/Cards/BigCard/BigCard";
+import Layout from "../../components/Layout/Layout";
 import QuickErectCranesImg from "../../assets/Images/Cranes/QuickErectCranes/Schnellmontagekran.jpg"
-import Headline1 from "../../components/Headline/Headline";
+import { Headline1 } from "../../components/Headline/Headline";
 
 function Cranes() {
     return (
         <>
-            <Header></Header>
-            <Headline1 text={"Krane"}></Headline1>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+            <Layout>
+                <Headline1 text={"Krane"}></Headline1>
+                <div className="">
 
-                <BigCard link="/cranes/constcranes" image={null} title="Baukrane" text="This is the first crane in our fleet."></BigCard>
+                    <BigCard link="/Krane/Baukrane" image={null} title="Baukrane" text="This is the first crane in our fleet."></BigCard>
 
-                <BigCard link="/cranes/quickerectcranes" image={QuickErectCranesImg} title="Schnellmontagekrane"></BigCard>
+                    <BigCard link="/Krane/Schnelleinsatzkran" image={QuickErectCranesImg} title="Schnellmontagekrane"></BigCard>
 
-                <BigCard link="/cranes/mobilcranes" image={null} title="Mobilkrane" text="This is the first crane in our fleet."></BigCard>
-
-            </div>
+                    <BigCard link="/Krane/Mobilkran" image={null} title="Mobilkrane" text="This is the first crane in our fleet."></BigCard>
+                </div>
+            </Layout>
 
         </>
     );

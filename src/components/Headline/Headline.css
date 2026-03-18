@@ -1,9 +1,7 @@
-.headline1 {
-    text-align: center;
-    margin: 30px;
-    color: gray;
+.headline {
     font-weight: 700;
-    font-size: 2.5rem;
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 187, 0);
+    color: var(--color-black);
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    text-align: center;
 }

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-gray: #5a5a5a;
+  /*Untergeordneten Schriften*/
+  --color-yellow: #ffbb00;
+  /*Aktzentfarbe*/
+  --color-black: #1a1a1a;
+  /*Standardschriftfarbe*/
+  --color-white: #ffffff;
+  /*Hintergrund*/
+
+  --font-heading: 'Bungee', cursive;
+  --font-text: 'Inter', sans-serif;
+
+  --max-width: 1400px;
+  --radius: 8px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  
+  --transition: 260ms cubic-bezier(.2, .8, .2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-white);
+}
