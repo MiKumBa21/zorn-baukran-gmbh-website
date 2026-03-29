@@ -1,5 +1,5 @@
 import "./HorizontalCard.css";
-import DownloadButton from '../../Button/DownloadButton';
+import { DownloadButton } from '../../Button/Button';
 
 function HorizontalCard(props: any) {
     const showUsedCraneOptions = props.showUsedCraneOptions ?? false;

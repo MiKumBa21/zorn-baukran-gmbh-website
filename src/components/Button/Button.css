@@ -1,8 +1,8 @@
 button {
     border-radius: var(--radius);
-    padding: 8px 14px;
+    padding: 0.625rem 0.9375rem;
     align-self: flex-start;
-    margin: 6px;
+    margin: 0.375rem;
     background-color: var(--color-yellow);
     border: none;
     color: var(--color-black);
@@ -13,4 +13,7 @@ button:hover {
     background-color: var(--color-yellow);
     color: var(--color-black);
     border: none;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
 }
+

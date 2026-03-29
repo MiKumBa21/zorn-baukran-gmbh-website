@@ -1,0 +1,14 @@
+.HeadContainer {
+    height: 50vh;
+    margin: 0 auto;
+    background: linear-gradient(90deg, var(--color-gray) 50%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeadContainer img {
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}

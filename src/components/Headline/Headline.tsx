@@ -1,7 +1,8 @@
+import type { ReactNode } from 'react';
 import './Headline.css';
 
 interface HeadlineProps {
-    text: string;
+    text: ReactNode;
     subtitle?: string;
 }
 
@@ -19,6 +20,16 @@ export function Headline2(props: HeadlineProps) {
         <div className="headline">
             <h2>{props.text}</h2>
             {props.subtitle && <p>{props.subtitle}</p>}
+        </div>
+    );
+}
+
+export function BigHeadline(props: HeadlineProps) {
+    return (
+        <div className="headline">
+            <div className="BigHeadline">
+                <h1>{props.text}</h1>
+            </div>
         </div>
     );
 }

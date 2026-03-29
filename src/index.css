@@ -7,18 +7,18 @@
   /*Aktzentfarbe*/
   --color-black: #1a1a1a;
   /*Standardschriftfarbe*/
-  --color-white: #ffffff;
+  --color-white: #f4f8ff;
   /*Hintergrund*/
 
-  --font-heading: 'Bungee', cursive;
+  --font-heading: 'Bungee';
   --font-text: 'Inter', sans-serif;
 
-  --max-width: 1400px;
-  --radius: 8px;
+  --max-width: 90vw;
+  --radius: 0.5rem;
 
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --shadow-sm: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 0.5rem 2rem rgba(0, 0, 0, 0.16);
   
   --transition: 260ms cubic-bezier(.2, .8, .2, 1);
 }
@@ -30,4 +30,5 @@ html {
 body {
   margin: 0;
   background-color: var(--color-white);
+  font-family: var(--font-text);
 }

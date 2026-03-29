@@ -1,0 +1,30 @@
+.CardContainer {
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transition: var(--transition);
+    width: 500px;
+    text-align: center;
+}
+
+.CardContainer:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-0.1875rem);
+}
+
+.card-img {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+}
+
+.card-body {
+    color: var(--color-black);
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}

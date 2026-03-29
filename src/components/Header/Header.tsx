@@ -1,6 +1,6 @@
 import NavBar from '../NavBar/NavBar'
 import './Header.css'
-import Logo from '../../assets/Images/Logo/logo_gelb.jpg'
+import Logo from '/Images/Logo/logo_gelb.jpg'
 import { Link } from 'react-router-dom'
 
 

@@ -1,7 +1,17 @@
 .headline {
+    font-size: 1.5625rem;
     font-weight: 700;
     color: var(--color-black);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-family: var(--font-heading);
     text-align: center;
 }
+
+.BigHeadline {
+    text-align: left;
+    margin-left: 2.5rem;
+    font-size: 2.5rem;
+    color: var(--color-white);
+    text-shadow: 0.125rem 0.125rem 0.25rem var(--color-black);
+}
+

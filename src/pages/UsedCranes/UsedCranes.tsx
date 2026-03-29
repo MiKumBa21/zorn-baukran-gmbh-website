@@ -7,7 +7,7 @@ function UsedCranes() {
     return (
         <div>
             <Layout>
-                <Headline1 text='Gebraucht Krane' ></Headline1>
+                <Headline1 text='Gebraucht Krane' subtitle="Zu Verkaufen sind:" ></Headline1>
 
                 {cranesData.usedCranes.map(crane => (
                 <HorizontalCard key={crane.id} {...crane} />
