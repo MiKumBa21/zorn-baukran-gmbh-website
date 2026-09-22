@@ -26,3 +26,22 @@
   display: flex;
   align-items: center;
 }
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+.header-container {
+    position: relative;
+}
+
+  .header-inner {
+    max-width: 95vw;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-logo {
+    height: 8vh;
+  }
+}

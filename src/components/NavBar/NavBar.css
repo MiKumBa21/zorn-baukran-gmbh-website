@@ -62,3 +62,13 @@
     color: var(--color-black);
     border-radius: 6px;
 }
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .dropdown-menu {
+        margin: 0.5rem 0;
+    }
+}

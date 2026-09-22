@@ -1,4 +1,4 @@
-import BigCard from "../../components/Cards/BigCard/BigCard";
+import { BigCard } from "../../components/Cards/card";
 import Layout from "../../components/Layout/Layout";
 import QuickErectCranesImg from "/Images/Cranes/QuickErectCranes/Schnellmontagekran.jpg"
 import ConstCranesImg from "/Images/Cranes/ConstCranes/Baukran.svg"

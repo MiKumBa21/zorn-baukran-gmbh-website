@@ -1,14 +1,104 @@
 .HeadContainer {
-    height: 50vh;
-    margin: 0 auto;
-    background: linear-gradient(90deg, var(--color-gray) 50%, transparent 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    overflow: hidden;
+    margin: 0;
 }
 
-.HeadContainer img {
+.HeadContent {
+    background: var(--color-gray);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.HeadActions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.HeadContent .Headline {
+    color: #fff;
+}
+
+.HeadImageLayer {
+    position: relative;
+    overflow: hidden;
+}
+
+.HeadImageLayer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--color-gray) 0%, rgba(128, 128, 128, 0.8) 30%, rgba(128, 128, 128, 0) 60%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.HeadImageLayer img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    display: block;
+}
+
+@media (max-width: 1080px) {
+    .HeadContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .HeadContent {
+        padding: 2rem;
+        justify-content: center;
+        text-align: center;
+        height: 30vw;
+    }
+
+    .HeadText {
+        align-items: center;
+    }
+
+    .HeadActions {
+        justify-content: center;
+    }
+
+    .BigHeadline {
+        font-size: 2rem;
+    }
+
+    .HeadImageLayer::before {
+        background: linear-gradient(180deg, var(--color-gray) 0%, rgba(128, 128, 128, 0.4) 40%, rgba(128, 128, 128, 0) 60%, transparent 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .HeadContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .HeadContent {
+        padding: 2rem;
+        justify-content: center;
+        text-align: center;
+        height: 20vw;
+    }
+
+    .HeadText {
+        align-items: center;
+    }
+
+    .HeadActions {
+        justify-content: center;
+    }
+
+    .BigHeadline {
+        font-size: 2rem;
+    }
+
 }

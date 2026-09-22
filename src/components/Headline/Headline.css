@@ -1,17 +1,28 @@
 .headline {
-    font-size: 1.5625rem;
+    font-size: 1.5em;
     font-weight: 700;
     color: var(--color-black);
-    margin-bottom: 1.25rem;
     font-family: var(--font-heading);
     text-align: center;
 }
 
+.subtitle {
+    font-family: var(--font-text);
+    font-size: 1.125rem;
+    color: var(--color-gray);
+}
+
 .BigHeadline {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
     text-align: left;
-    margin-left: 2.5rem;
-    font-size: 2.5rem;
     color: var(--color-white);
     text-shadow: 0.125rem 0.125rem 0.25rem var(--color-black);
 }
 
+@media (max-width: 768px) {
+    .headline {
+        font-size: 1em;
+    }
+}
