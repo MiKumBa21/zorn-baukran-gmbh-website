@@ -15,7 +15,7 @@ function Cranes() {
 
                     <BigCard link="/Krane/Baukrane" image={ConstCranesImg} title="Baukrane" description=""></BigCard>
 
-                    <BigCard link="/Krane/Schnelleinsatzkran" image={QuickErectCranesImg} title="Schnellmontagekrane" description=" Für Dachdecker"></BigCard>
+                    <BigCard link="/Krane/Schnelleinsatzkran" image={QuickErectCranesImg} title="Schnellmontagekrane" description=""></BigCard>
 
                     <BigCard link="/Krane/Mobilkran" image={MobilCranesImg} title="Mobilkrane" description=""></BigCard>
                 </div>

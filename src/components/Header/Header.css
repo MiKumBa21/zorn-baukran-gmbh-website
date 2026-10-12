@@ -28,8 +28,7 @@
 }
 
 
-/* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 1080px ) {
 .header-container {
     position: relative;
 }

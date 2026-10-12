@@ -85,6 +85,15 @@ img.block {
     opacity: 1;
 }
 
+.nav-button svg {
+    display: block;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 @media (max-width: 1080px) {
     section {
         box-sizing: border-box;
@@ -99,3 +108,4 @@ img.block {
     }
 
 }
+

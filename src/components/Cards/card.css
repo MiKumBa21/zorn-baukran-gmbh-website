@@ -9,9 +9,9 @@
     margin: 1.875rem auto;
 }
 
-.horizontal-card:hover {
+.horizontal-card-container:hover {
     box-shadow: var(--shadow-lg);
-    transform: translateY(-6px);
+    transform: translateY(-2px);
 }
 
 .horizontal-card-body {
@@ -45,7 +45,7 @@
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
-    border-radius: 4px;
+    border-radius: var(--radius);
 }
 
 .horizontal-card-title {
@@ -123,7 +123,7 @@
     margin: 1rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .horizontal-card-body {
         grid-template-columns: 1fr;
     }

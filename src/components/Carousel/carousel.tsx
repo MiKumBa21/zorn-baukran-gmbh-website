@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './carousel.css';
 
 
@@ -39,7 +39,10 @@ export function ImageCarousel() {
     return (
         <section>
             <div className="image-container">
-                <button className="nav-button left" onClick={handlePreviousClick}>&lt;</button>
+                <button className="nav-button left" onClick={handlePreviousClick}>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m15 18-6-6 6-6" />
+                    </svg></button>
 
                 {carouselImages.map((image, index) => (
                     <img
@@ -50,7 +53,11 @@ export function ImageCarousel() {
                     />
                 ))}
 
-                <button className="nav-button right" onClick={handleNextClick}>&gt;</button>
+                <button className="nav-button right" onClick={handleNextClick}>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </button>
             </div>
         </section>
     );

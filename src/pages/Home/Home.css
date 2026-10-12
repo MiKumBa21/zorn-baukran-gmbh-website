@@ -1,3 +1,4 @@
+/* Head Section */
 .HeadContainer {
     width: 100%;
     min-height: 50vh;
@@ -51,54 +52,113 @@
 @media (max-width: 1080px) {
     .HeadContainer {
         grid-template-columns: 1fr;
+        min-height: 0;
     }
 
     .HeadContent {
+        height: auto;
         padding: 2rem;
         justify-content: center;
+        gap: 1.5rem;
         text-align: center;
-        height: 30vw;
-    }
-
-    .HeadText {
-        align-items: center;
     }
 
     .HeadActions {
         justify-content: center;
     }
 
-    .BigHeadline {
-        font-size: 2rem;
+    .HeadImageLayer {
+        height: clamp(220px, 45vw, 480px);
     }
 
     .HeadImageLayer::before {
-        background: linear-gradient(180deg, var(--color-gray) 0%, rgba(128, 128, 128, 0.4) 40%, rgba(128, 128, 128, 0) 60%, transparent 100%);
+        background: linear-gradient(
+            180deg,
+            var(--color-gray) 0%,
+            rgba(128, 128, 128, 0.4) 40%,
+            rgba(128, 128, 128, 0) 60%,
+            transparent 100%
+        );
     }
 }
 
 @media (max-width: 768px) {
-    .HeadContainer {
-        grid-template-columns: 1fr;
-    }
-
     .HeadContent {
-        padding: 2rem;
-        justify-content: center;
-        text-align: center;
-        height: 20vw;
-    }
-
-    .HeadText {
-        align-items: center;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
     }
 
     .HeadActions {
-        justify-content: center;
+        gap: 1rem;
     }
 
     .BigHeadline {
-        font-size: 2rem;
+        font-size: 1.43rem;
+    }
+}
+
+/* Services Section */
+
+.ServicesContainer {
+    margin: 0 5rem;
+    border-radius: var(--radius);
+}
+
+.ServicesListWrap {
+    margin: 0 6rem;
+    padding: 0 1rem;
+}
+
+.ServicesList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ServicesList li {
+    position: relative;
+    padding: 1rem 0 1rem 1.5rem;
+    line-height: 1.55;
+}
+
+.ServicesList li::before {
+    content: "";
+    position: absolute;
+    top: 1.45rem;
+    left: 0.15rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--color-yellow);
+    transform: rotate(45deg);
+}
+
+@media (max-width: 1080px) {
+    .ServicesListWrap {
+        margin: 0 2rem;
     }
 
+    .ServicesList {
+        column-gap: 2rem;
+    }
 }
+
+@media (max-width: 768px) {
+    .ServicesContainer {
+        padding: 1rem 0 2rem;
+    }
+
+    .ServicesListWrap {
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    .ServicesList {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

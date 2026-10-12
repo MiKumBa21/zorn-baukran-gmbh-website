@@ -8,58 +8,61 @@ export function HorizontalCard(props: any) {
     const [isImageOpen, setIsImageOpen] = useState(false);
 
     return (
-        <div className="horizontal-card-container">
-            <div className="horizontal-card-body">
-                <div className="col-md-4">
-                    <img
-                        src={props.imgSrc}
-                        className="horizontal-card-img"
-                        alt="Bild"
-                        onClick={() => setIsImageOpen(true)}
-                    />
-                </div>
+        <div>
+            <div className="horizontal-card-container">
+                <div className="horizontal-card-body">
+                    <div className="col-md-4">
+                        <img
+                            src={props.imgSrc}
+                            className="horizontal-card-img"
+                            alt="Bild"
+                            onClick={() => setIsImageOpen(true)}
+                        />
+                    </div>
 
-                <div className="horizontal-card-content">
-                    <h5 className="horizontal-card-title">{props.title}</h5>
-                    <h5 className='horizontal-card-subtitle'>{props.marke}</h5>
+                    <div className="horizontal-card-content">
+                        <h5 className="horizontal-card-title">{props.title}</h5>
+                        <h5 className='horizontal-card-subtitle'>{props.marke}</h5>
 
-                    <div className='horizontal-card-table' aria-hidden="false">
-                        <div className='horizontal-card-table-row'>
-                            <div className='horizontal-card-table-cell label'>Ausladung</div>
-                            <div className='horizontal-card-table-cell value'>{props.ausladung}m</div>
+                        <div className='horizontal-card-table' aria-hidden="false">
+                            <div className='horizontal-card-table-row'>
+                                <div className='horizontal-card-table-cell label'>Ausladung</div>
+                                <div className='horizontal-card-table-cell value'>{props.ausladung}m</div>
+                                {showUsedCraneOptions && (
+                                    <div className='horizontal-card-table-cell value'>Preis auf Anfrage</div>)
+                                }
+                            </div>
+                            <div className='horizontal-card-table-row'>
+                                <div className='horizontal-card-table-cell label'>Max. Last</div>
+                                <div className='horizontal-card-table-cell value'>{props.maxLast}kg</div>
+                            </div>
+                            <div className='horizontal-card-table-row'>
+                                <div className='horizontal-card-table-cell label'>Hackenhöhe</div>
+                                <div className='horizontal-card-table-cell value'>{props.hakenhöhe}m</div>
+                            </div>
+                            <div className='horizontal-card-table-row'>
+                                <div className='horizontal-card-table-cell label'>Spitzenlast</div>
+                                <div className='horizontal-card-table-cell value'>{props.spitzenLast}kg</div>
+                                <div>
+                                    <DownloadButton text="Datenblatt" path={props.dataSheet}></DownloadButton>
+                                </div>
+                            </div>
                             {showUsedCraneOptions && (
-                                <div className='horizontal-card-table-cell value'>Preis auf Anfrage</div>)
-                            }
+                                <div className='horizontal-card-table-row'>
+                                    <div className='horizontal-card-table-cell label'>Baujahr</div>
+                                    <div className='horizontal-card-table-cell value'>{props.baujahr}</div>
+                                </div>
+                            )}
+                            {showUsedCraneOptions && (
+                                <div className='horizontal-card-table-row'>
+                                    <div className='horizontal-card-table-cell label'>Beschreibung</div>
+                                    <div className='horizontal-card-table-cell value'>{props.beschreibung}</div>
+                                </div>
+                            )}
                         </div>
-                        <div className='horizontal-card-table-row'>
-                            <div className='horizontal-card-table-cell label'>Max. Last</div>
-                            <div className='horizontal-card-table-cell value'>{props.maxLast}kg</div>
-                        </div>
-                        <div className='horizontal-card-table-row'>
-                            <div className='horizontal-card-table-cell label'>Hackenhöhe</div>
-                            <div className='horizontal-card-table-cell value'>{props.hakenhöhe}m</div>
-                        </div>
-                        <div className='horizontal-card-table-row'>
-                            <div className='horizontal-card-table-cell label'>Spitzenlast</div>
-                            <div className='horizontal-card-table-cell value'>{props.spitzenLast}kg</div>
-                            <div>
-                                <DownloadButton text="Datenblatt" path={props.dataSheet}></DownloadButton>
-                            </div>
-                        </div>
-                        {showUsedCraneOptions && (
-                            <div className='horizontal-card-table-row'>
-                                <div className='horizontal-card-table-cell label'>Baujahr</div>
-                                <div className='horizontal-card-table-cell value'>{props.baujahr}</div>
-                            </div>
-                        )}
-                        {showUsedCraneOptions && (
-                            <div className='horizontal-card-table-row'>
-                                <div className='horizontal-card-table-cell label'>Beschreibung</div>
-                                <div className='horizontal-card-table-cell value'>{props.beschreibung}</div>
-                            </div>
-                        )}
                     </div>
                 </div>
+
             </div>
             {isImageOpen && (
                 <div
@@ -74,6 +77,9 @@ export function HorizontalCard(props: any) {
                 </div>
             )}
         </div>
+
+
+
     );
 }
 

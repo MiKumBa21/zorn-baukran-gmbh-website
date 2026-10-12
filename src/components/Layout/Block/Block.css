@@ -1,0 +1,10 @@
+.blockDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-beige);
+    margin: 0 6rem;
+    border-radius: var(--radius);
+    padding: 0.5rem;
+}
