@@ -16,7 +16,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="HeadImageLayer">
-                    <img src="/Images/DSCN4462.JPG" alt="LKW" />
+                    <img src="/Images/PXL_20261027_143801426.jpg" alt="LKW" />
                 </div>
             </div>
             <div className="ServicesContainer">

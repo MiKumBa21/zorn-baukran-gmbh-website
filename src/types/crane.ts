@@ -1,0 +1,14 @@
+export interface Crane {
+    id: string;
+    title: string;
+    marke: string;
+    maxLast: number;
+    spitzenLast: number;
+    hakenhöhe: number;
+    ausladung: number;
+    imgSrc: string | null;
+    dataSheet: string | null;
+
+    baujahr?: string;
+    beschreibung?: string;
+}

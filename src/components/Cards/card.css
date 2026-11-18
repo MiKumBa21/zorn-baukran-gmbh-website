@@ -27,6 +27,10 @@
     cursor: zoom-in;
 }
 
+.image-placeholder .horizontal-card-img:hover {
+    cursor: auto;
+}
+
 .image-lightbox-overlay {
     position: fixed;
     top: 0;

@@ -1,9 +1,14 @@
 import "./card.css";
-import { DownloadButton } from '../Button/Button';
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import {DownloadButton} from '../Button/Button';
+import {Link} from "react-router-dom";
+import {useState} from "react";
+import type {Crane} from "../../types/crane.ts";
 
-export function HorizontalCard(props: any) {
+interface HorizontalCardProps extends Crane {
+    showUsedCraneOptions?: boolean;
+}
+
+export function HorizontalCard(props: HorizontalCardProps) {
     const showUsedCraneOptions = props.showUsedCraneOptions ?? false;
     const [isImageOpen, setIsImageOpen] = useState(false);
 
@@ -12,12 +17,14 @@ export function HorizontalCard(props: any) {
             <div className="horizontal-card-container">
                 <div className="horizontal-card-body">
                     <div className="col-md-4">
-                        <img
+                        {props.imgSrc ? (<img
                             src={props.imgSrc}
                             className="horizontal-card-img"
                             alt="Bild"
                             onClick={() => setIsImageOpen(true)}
-                        />
+                        />) : (<div className="image-placeholder">
+                            <img src="/Images/noPicture.jpg" className="horizontal-card-img" alt="Kein Bild verfügbar"/>
+                        </div>)}
                     </div>
 
                     <div className="horizontal-card-content">
@@ -43,9 +50,9 @@ export function HorizontalCard(props: any) {
                             <div className='horizontal-card-table-row'>
                                 <div className='horizontal-card-table-cell label'>Spitzenlast</div>
                                 <div className='horizontal-card-table-cell value'>{props.spitzenLast}kg</div>
-                                <div>
-                                    <DownloadButton text="Datenblatt" path={props.dataSheet}></DownloadButton>
-                                </div>
+                                <div>{props.dataSheet ? (
+                                    <DownloadButton text="Datenblatt" path={props.dataSheet}></DownloadButton>) : (
+                                    <div className="datasheet-placeholder">Kein Datenblatt verfügbar</div>)}</div>
                             </div>
                             {showUsedCraneOptions && (
                                 <div className='horizontal-card-table-row'>
@@ -77,9 +84,6 @@ export function HorizontalCard(props: any) {
                 </div>
             )}
         </div>
-
-
-
     );
 }
 
@@ -94,7 +98,7 @@ export function BigCard(props: BigCardProps) {
     return (
 
         <div className='big-card-container'>
-            <Link to={props.link} style={{ textDecoration: "none" }}>
+            <Link to={props.link} style={{textDecoration: "none"}}>
                 <div className="big-card-content">
                     <img src={props.image} className="big-card-img" alt="Bild"></img>
                     <div className="big-card-body">

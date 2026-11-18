@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
 import "./Button.css";
 
-const downloadFile = (path: string) => {
-    const link = document.createElement("a");
-    link.href = path;
-    link.download = path.substring(path.lastIndexOf("/") + 1);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+const downloadFile = (path: string | undefined) => {
+    if (path != null){
+        const link = document.createElement("a");
+        link.href = path;
+        link.download = path.substring(path.lastIndexOf("/") + 1);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 };
 
 interface DownloadButtonProps {
-    path: string;
+    path: string | undefined;
     text: string;
 }
 

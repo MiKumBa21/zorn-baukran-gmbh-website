@@ -26,7 +26,7 @@ function NavBar() {
                     <Link to={"/Eurogru"} className="nav-link">Eurogru - Partner</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to={"/Gebrauchte-Krane"} className="nav-link">Gebraucht Krane</Link>
+                    <Link to={"/Gebrauchte-Krane"} className="nav-link">Gebrauchte Krane</Link>
                 </li>
                 <li className="nav-item">
                     <Link to={"/Kontakt"} className="nav-link">Kontakt</Link>

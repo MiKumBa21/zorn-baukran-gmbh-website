@@ -1,12 +1,13 @@
-import Header from "../../components/Header/Header";
+import Layout from "../../components/Layout/Layout.tsx";
 import { Headline1 } from "../../components/Headline/Headline";
+
 
 function Contact() {
     return (
-        <div>
-            <Header></Header>
-            <Headline1 text='Kontakt' ></Headline1>
-        </div>
+        <Layout>
+            <Headline1 text={"Kontakt"}/>
+            
+        </Layout>
     );
 }
 export default Contact;
