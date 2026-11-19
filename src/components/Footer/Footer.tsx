@@ -11,8 +11,8 @@ function Footer() {
                     4551 Ried im Traunkreis
                 </div>
                 <div>
-                    Tel.: <a href="tel:+436643336271">+43 664 3336271</a><br />
-                    E-Mail: <a href="mailto:karl.zorn@aon.at">karl.zorn@aon.at</a>
+                    Tel.: <a href="tel:+436643336271" target="_blank">+43 664 3336271</a><br />
+                    E-Mail: <a href="mailto:karl.zorn@aon.at" target="_blank">karl.zorn@aon.at</a>
                 </div>
                 <nav aria-label="Rechtliches">
                     <Link to="/Kontakt">Kontakt</Link>

@@ -22,6 +22,7 @@ export function HorizontalCard(props: HorizontalCardProps) {
                             className="horizontal-card-img"
                             alt="Bild"
                             onClick={() => setIsImageOpen(true)}
+                            loading="lazy"
                         />) : (<div className="image-placeholder">
                             <img src="/Images/noPicture.jpg" className="horizontal-card-img" alt="Kein Bild verfügbar"/>
                         </div>)}

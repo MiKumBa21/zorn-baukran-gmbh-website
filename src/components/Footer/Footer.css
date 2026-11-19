@@ -11,6 +11,10 @@
     gap: 2rem;
 }
 
+.footer-container * {
+    margin: auto;
+}
+
 .footer a {
     color: var(--color-white);
     text-decoration: none;

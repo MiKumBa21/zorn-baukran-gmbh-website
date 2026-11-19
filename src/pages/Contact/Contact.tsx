@@ -1,11 +1,11 @@
 import {Headline1} from "../../components/Headline/Headline";
-
+import "./Contact.css"
 
 function Contact() {
     return (
         <div>
-            <Headline1 text={"Kontakt"}/>
             <title>Kontakt | Zorn Baukran GmbH</title>
+            <Headline1 text={"Kontakt"}/>
         </div>
 
     );

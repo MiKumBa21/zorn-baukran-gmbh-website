@@ -16,6 +16,7 @@ import MobilCranes from './pages/Cranes/MobilCranes/MobilCranes'
 import QuickErectCranes from './pages/Cranes/QuickErectCranes/QuickErectCranes'
 import UsedCranes from './pages/UsedCranes/UsedCranes'
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
+import Impressum from "./pages/Impressum/Impressum.tsx";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function RouterLayout() {
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       { path: 'Eurogru', element: <Eurogru /> },
       { path: 'Kontakt', element: <Contact /> },
       { path: '*', element: <NotFoundPage /> },
+      { path: 'Impressum', element: <Impressum />}
     ],
   },
 ])
