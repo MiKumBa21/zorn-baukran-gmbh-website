@@ -1,13 +1,14 @@
-import Layout from "../../components/Layout/Layout.tsx";
-import { Headline1 } from "../../components/Headline/Headline";
+import {Headline1} from "../../components/Headline/Headline";
 
 
 function Contact() {
     return (
-        <Layout>
+        <div>
             <Headline1 text={"Kontakt"}/>
-            
-        </Layout>
+            <title>Kontakt | Zorn Baukran GmbH</title>
+        </div>
+
     );
 }
+
 export default Contact;

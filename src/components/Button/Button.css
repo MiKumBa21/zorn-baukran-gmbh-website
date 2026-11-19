@@ -1,5 +1,5 @@
-button,
 .LinkButton {
+    display: inline-block;
     border-radius: var(--radius);
     padding: 0.625rem 0.9375rem;
     align-self: flex-start;
@@ -8,16 +8,14 @@ button,
     border: none;
     color: var(--color-black);
     font-weight: 500;
+    font-size: inherit;
+    font-family: inherit;
     text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
-
-
-button:hover,
-.LinkButton:hover {
-    background-color: var(--color-yellow);
-    color: var(--color-black);
-    border: none;
+.LinkButton:hover,
+.LinkButton:focus-visible {
     box-shadow: var(--shadow-md);
-    transition: var(--transition);
 }

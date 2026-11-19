@@ -1,0 +1,39 @@
+.footer {
+    margin-top: 3rem;
+    background: var(--color-gray);
+    color: var(--color-white);
+    padding: 2rem 5vw 1rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+    color: var(--color-yellow);
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-copy {
+    margin: 2rem 0 0;
+    text-align: center;
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .footer-container { grid-template-columns: 1fr; }
+}

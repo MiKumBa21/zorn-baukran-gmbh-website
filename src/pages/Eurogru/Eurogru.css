@@ -18,11 +18,16 @@
 }
 
 .eurogru-text-container {
+    height: 70vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 2rem;
     padding: 0 5vw;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 

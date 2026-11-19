@@ -1,20 +1,20 @@
-import { Headline1 } from "../../../components/Headline/Headline";
+import {Headline1} from "../../../components/Headline/Headline";
 import cranesData from '../../../data/cranes.json';
-import { HorizontalCard } from "../../../components/Cards/card";
-import Layout from "../../../components/Layout/Layout";
+import {HorizontalCard} from "../../../components/Cards/card";
 
 function QuickErectCranes() {
     return (
         <div>
-            <Layout>
-                <Headline1 text={"Schnellmontagekrane"}></Headline1>
+            <title>Schnellmontagekrane | Zorn Baukran GmbH</title>
+            <Headline1 text={"Schnellmontagekrane"}></Headline1>
 
-                {cranesData.quickErectCranes.map(crane => (
-                    <HorizontalCard key={crane.id} {...crane} />
-                ))}
-            </Layout>
+            {cranesData.quickErectCranes.map(crane => (
+                <HorizontalCard key={crane.id} {...crane} />
+            ))}
+
         </div>
 
     );
 }
+
 export default QuickErectCranes;

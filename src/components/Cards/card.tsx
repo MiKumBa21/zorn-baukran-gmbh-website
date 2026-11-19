@@ -71,7 +71,7 @@ export function HorizontalCard(props: HorizontalCardProps) {
                 </div>
 
             </div>
-            {isImageOpen && (
+            {isImageOpen && props.imgSrc && (
                 <div
                     className="image-lightbox-overlay"
                     onClick={() => setIsImageOpen(false)}

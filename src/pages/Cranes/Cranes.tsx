@@ -1,25 +1,22 @@
 import { BigCard } from "../../components/Cards/card";
-import Layout from "../../components/Layout/Layout";
-import QuickErectCranesImg from "/Images/Cranes/QuickErectCranes/Schnellmontagekran.jpg"
-import ConstCranesImg from "/Images/Cranes/ConstCranes/Baukran.svg"
-import MobilCranesImg from "/Images/Cranes/MobilCranes/Mobilkran.jpg"
 import { Headline1 } from "../../components/Headline/Headline";
 import './Cranes.css';
 
 function Cranes() {
     return (
         <>
-            <Layout>
+            <title>Krane | Zorn Baukran GmbH</title>
+
                 <Headline1 text={"Krane"}></Headline1>
                 <div className="cranesContainer">
 
-                    <BigCard link="/Krane/Baukrane" image={ConstCranesImg} title="Baukrane" description=""></BigCard>
+                    <BigCard link="/Krane/Baukrane" image="/Images/Cranes/ConstCranes/Baukran.svg" title="Baukrane" description=""></BigCard>
 
-                    <BigCard link="/Krane/Schnelleinsatzkran" image={QuickErectCranesImg} title="Schnellmontagekrane" description=""></BigCard>
+                    <BigCard link="/Krane/Schnelleinsatzkran" image="/Images/Cranes/QuickErectCranes/Schnellmontagekran.jpg" title="Schnellmontagekrane" description=""></BigCard>
 
-                    <BigCard link="/Krane/Mobilkran" image={MobilCranesImg} title="Mobilkrane" description=""></BigCard>
+                    <BigCard link="/Krane/Mobilkran" image="/Images/Cranes/MobilCranes/Mobilkran.jpg" title="Mobilkrane" description=""></BigCard>
                 </div>
-            </Layout>
+
 
         </>
     );

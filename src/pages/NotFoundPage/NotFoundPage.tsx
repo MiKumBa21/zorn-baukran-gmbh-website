@@ -1,11 +1,10 @@
-import Layout from "../../components/Layout/Layout";
 
 function NotFoundPage() {
     return (
         <div>
-            <Layout>
+            <title>Seite nicht gefunden | Zorn Baukran GmbH</title>
                 <h1>NotFoundPage</h1>
-            </Layout>
+
         </div>
     );
 }  

@@ -1,6 +1,5 @@
 import NavBar from '../NavBar/NavBar'
 import './Header.css'
-import Logo from '/Images/Logo/logo_gelb.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -9,7 +8,7 @@ function Header() {
         <header className="header-container">
             <div className="header-inner">
                 <Link to="/" className="header-logo-link">
-                    <img src={Logo} alt="Zorn Baukran Logo" className="header-logo" />
+                    <img src='/Images/Logo/logo_gelb.jpg' alt="Zorn Baukran Logo" className="header-logo" />
                 </Link>
                 <NavBar />
             </div>

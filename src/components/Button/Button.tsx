@@ -1,27 +1,18 @@
 import { Link } from "react-router-dom";
 import "./Button.css";
 
-const downloadFile = (path: string | undefined) => {
-    if (path != null){
-        const link = document.createElement("a");
-        link.href = path;
-        link.download = path.substring(path.lastIndexOf("/") + 1);
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-};
-
 interface DownloadButtonProps {
-    path: string | undefined;
+    path: string | null | undefined;
     text: string;
+    label?: string;
 }
 
-export function DownloadButton(props: DownloadButtonProps) {
+export function DownloadButton({ path, text, label }: DownloadButtonProps) {
+    if (!path) return null;
     return (
-        <button className="btn1" onClick={() => downloadFile(props.path)}>
-            {props.text}
-        </button>
+        <a className="LinkButton" href={path} download aria-label={label ?? text}>
+            {text}
+        </a>
     );
 }
 
@@ -30,10 +21,10 @@ interface InternLinkButtonProps {
     text: string;
 }
 
-export function InternLinkButton(props: InternLinkButtonProps) {
+export function InternLinkButton({ url, text }: InternLinkButtonProps) {
     return (
-        <Link to={props.url} className="LinkButton">
-            {props.text}
+        <Link to={url} className="LinkButton">
+            {text}
         </Link>
     );
 }

@@ -1,21 +1,21 @@
-import { HorizontalCard } from "../../components/Cards/card";
-import { Headline1 } from "../../components/Headline/Headline";
+import {HorizontalCard} from "../../components/Cards/card";
+import {Headline1} from "../../components/Headline/Headline";
 import cranesData from "../../data/cranes.json"
-import Layout from "../../components/Layout/Layout";
 
 function UsedCranes() {
     return (
         <div>
-            <Layout>
-                <Headline1 text='Gebrauchte Krane' subtitle="Zu Verkaufen sind:" ></Headline1>
+            <title>Gebrauchte Krane | Zorn Baukran GmbH</title>
+            <Headline1 text='Gebrauchte Krane' subtitle="Zu Verkaufen sind:"></Headline1>
 
-                {cranesData.usedCranes.map(crane => (
-                    <HorizontalCard key={crane.id} {...crane} showUsedCraneOptions />
-                ))}
+            {cranesData.usedCranes.map(crane => (
+                <HorizontalCard key={crane.id} {...crane} showUsedCraneOptions/>
+            ))}
 
-                {/*LH 34K, 35K, 40K, 42K, 42K.1 Turmstück mit/ohne Betriebsauflage: jeweils mehrere Stück verfügbar*/}
-            </Layout>
+            {/*LH 34K, 35K, 40K, 42K, 42K.1 Turmstück mit/ohne Betriebsauflage: jeweils mehrere Stück verfügbar*/}
+
         </div>
     );
 }
+
 export default UsedCranes;

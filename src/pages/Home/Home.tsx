@@ -1,26 +1,24 @@
-import Layout from "../../components/Layout/Layout";
 import "./Home.css";
-import { BigHeadline, Headline2 } from "../../components/Headline/Headline";
-import { InternLinkButton } from "../../components/Button/Button";
-import { ImageCarousel } from "../../components/Carousel/carousel";
+import {BigHeadline, Headline2} from "../../components/Headline/Headline";
+import {InternLinkButton} from "../../components/Button/Button";
+import {ImageCarousel} from "../../components/Carousel/carousel";
 
 function Home() {
-    return (
-        <Layout>
+    return (<div>
             <div className="HeadContainer">
                 <div className="HeadContent">
-                    <BigHeadline text={<>Zorn Baukran <br /> GmbH</>} />
+                    <BigHeadline text={<>Zorn Baukran <br/> GmbH</>}/>
                     <div className="HeadActions">
-                        <InternLinkButton url="/Krane" text="Unser Sortiment" />
-                        <InternLinkButton url="/Kontakt" text="Kontakt aufnehmen" />
+                        <InternLinkButton url="/Krane" text="Unser Sortiment"/>
+                        <InternLinkButton url="/Kontakt" text="Kontakt aufnehmen"/>
                     </div>
                 </div>
                 <div className="HeadImageLayer">
-                    <img src="/Images/PXL_20261027_143801426.jpg" alt="LKW" />
+                    <img src="/Images/PXL_20261027_143801426.jpg" alt="LKW"/>
                 </div>
             </div>
             <div className="ServicesContainer">
-                <Headline2 text={"Unsere Leistungen"} subtitle={"Starker Partner - Starke Leistung"} />
+                <Headline2 text={"Unsere Leistungen"} subtitle={"Starker Partner - Starke Leistung"}/>
                 <div className="ServicesListWrap">
                     <ul className="ServicesList">
                         <li>Besichtigung vor Ort</li>
@@ -36,11 +34,14 @@ function Home() {
                 </div>
             </div>
             <div>
-                <Headline2 text="Unsere Flotte" subtitle="Eindrücke aus den Einsätzen" />
-                <ImageCarousel />
+                <Headline2 text="Unsere Flotte" subtitle="Eindrücke aus den Einsätzen"/>
+                <ImageCarousel/>
             </div>
+        </div>
 
-        </Layout>
-    );
+
+    )
+        ;
 }
+
 export default Home;

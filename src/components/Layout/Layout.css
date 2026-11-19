@@ -1,0 +1,23 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    z-index: 200;
+    padding: 0.5rem 1rem;
+    background: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.skip-link:focus {
+    left: 0;
+}

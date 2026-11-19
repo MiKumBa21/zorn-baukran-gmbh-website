@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
   --color-gray: #5a5a5a;
@@ -11,8 +10,8 @@
   --color-white: #f4f8ff;
   /*Hintergrund*/
 
-  --font-heading: 'Bungee';
-  --font-text: 'Inter', sans-serif;
+  --font-heading: 'Bungee', sans-serif;
+  --font-text: 'Inter Variable', sans-serif;
 
   --max-width: 90vw;
   --radius: 6px;

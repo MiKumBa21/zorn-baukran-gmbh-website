@@ -6,8 +6,8 @@ export interface Crane {
     spitzenLast: number;
     hakenhöhe: number;
     ausladung: number;
-    imgSrc: string | null;
-    dataSheet: string | null;
+    imgSrc: string;
+    dataSheet: string;
 
     baujahr?: string;
     beschreibung?: string;

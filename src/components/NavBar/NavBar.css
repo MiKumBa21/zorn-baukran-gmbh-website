@@ -71,6 +71,15 @@
 
     .nav-toggle {
         display: block;
+        border-radius: var(--radius);
+        padding: 0.625rem 0.9375rem;
+        align-self: flex-start;
+        margin: 0;
+        background-color: var(--color-yellow);
+        border: none;
+        color: var(--color-black);
+        font-weight: 500;
+        text-decoration: none;
     }
 
     .nav-list {

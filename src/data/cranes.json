@@ -247,7 +247,7 @@
       "spitzenLast": 1050,
       "hakenhöhe": 21.5,
       "ausladung": 30,
-      "imgSrc": "/Images/Cranes/ConstCranes/E3010.svg",
+      "imgSrc": "/Images/Cranes/ConstCranes/E3010.png",
       "dataSheet": "/Datasheets/ConstCranes/E3010.pdf",
       "beschreibung": "Top gewartet und einsatzbereit",
       "baujahr": "2016"
@@ -277,19 +277,6 @@
       "dataSheet": "/Datasheets/ConstCranes/LH45K.pdf",
       "beschreibung": "Top gewartet und einsatzbereit, Hub-FU neu",
       "baujahr": "1994"
-    },
-    {
-      "id": "lh56k",
-      "title": "LH 56K",
-      "marke": "Liebherr",
-      "maxLast": 4500,
-      "spitzenLast": 1400,
-      "hakenhöhe": 34.50,
-      "ausladung": 40,
-      "imgSrc": null,
-      "dataSheet": "/Datasheets/ConstCranes/LH56K.pdf",
-      "beschreibung": "Top gewartet und einsatzbereit",
-      "baujahr": "2004"
     },
     {
       "id": "used-lh71k",

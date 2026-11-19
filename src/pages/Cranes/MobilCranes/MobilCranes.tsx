@@ -1,19 +1,18 @@
-import { Headline1 } from "../../../components/Headline/Headline";
-import { HorizontalCard } from "../../../components/Cards/card";
+import {Headline1} from "../../../components/Headline/Headline";
+import {HorizontalCard} from "../../../components/Cards/card";
 import cranesData from '../../../data/cranes.json';
-import Layout from "../../../components/Layout/Layout";
 
 function MobilCranes() {
     return (
         <div>
-            <Layout>
-                <Headline1 text='Mobilkrane' ></Headline1>
+            <title>Mobilkrane | Zorn Baukran GmbH</title>
+            <Headline1 text='Mobilkrane'></Headline1>
 
-                {cranesData.mobilCranes.map(crane => (
-                    <HorizontalCard key={crane.id} {...crane} />
-                ))}
-            </Layout>
+            {cranesData.mobilCranes.map(crane => (
+                <HorizontalCard key={crane.id} {...crane} />
+            ))}
         </div>
     );
 }
+
 export default MobilCranes;

@@ -1,8 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import '@fontsource/bungee';
+import '@fontsource-variable/inter'
+import Layout from './components/Layout/Layout';
 
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import ConstCranes from './pages/Cranes/ConstCranes/ConstCranes'
 import Contact from './pages/Contact/Contact'
@@ -14,12 +17,12 @@ import QuickErectCranes from './pages/Cranes/QuickErectCranes/QuickErectCranes'
 import UsedCranes from './pages/UsedCranes/UsedCranes'
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 
-
+// eslint-disable-next-line react-refresh/only-export-components
 function RouterLayout() {
   return (
     <>
       <ScrollToTop />
-      <Outlet />
+      <Layout />
     </>
   )
 }
