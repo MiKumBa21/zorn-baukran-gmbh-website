@@ -1,0 +1,64 @@
+/* src/pages/Impressum/Impressum.css */
+
+.impressum {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 5vw;
+}
+
+.impressum-container {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.impressum-container > div {
+    background-color: var(--color-beige);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border-left: 0.3rem solid var(--color-yellow);
+    padding: 1.25rem 1.5rem;
+    color: var(--color-black);
+    line-height: 1.6;
+    /* Zeilenumbrüche aus dem JSX-Text erhalten */
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.impressum-container strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+.impressum-container a {
+    color: var(--color-black);
+}
+
+.impressum-container a:hover,
+.impressum-container a:focus-visible {
+    color: var(--color-gray);
+}
+
+@media (max-width: 768px) {
+    .impressum {
+        padding: 1.5rem 1rem;
+    }
+
+    .impressum-container {
+        gap: 1rem;
+    }
+
+    .impressum-container > div {
+        padding: 1rem;
+    }
+
+    .impressum-container strong {
+        font-size: 1rem;
+    }
+}
