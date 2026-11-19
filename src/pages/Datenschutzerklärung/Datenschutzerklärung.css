@@ -1,0 +1,79 @@
+.datenschutzerklaerung {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 5vw;
+}
+
+.datenschutzerklaerung-container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.datenschutzerklaerung-container section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Abstand zwischen den einzelnen Karten */
+}
+
+.datenschutzerklaerung-container h1 {
+    font-family: var(--font-heading);
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+/* Jedes einzelne div-Element bekommt den Kasten-Look samt gelbem Strich */
+.datenschutzerklaerung-card {
+    background-color: var(--color-beige);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border-left: 0.3rem solid var(--color-yellow);
+    padding: 1.25rem 1.5rem;
+    color: var(--color-black);
+    line-height: 1.6;
+}
+
+.datenschutzerklaerung-card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-gray);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.datenschutzerklaerung-card p {
+    margin-bottom: 1rem;
+}
+
+.datenschutzerklaerung-card p:last-child {
+    margin-bottom: 0;
+}
+
+.datenschutzerklaerung-card ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+}
+
+.datenschutzerklaerung-card li {
+    margin-bottom: 0.3rem;
+}
+
+.datenschutzerklaerung-card a {
+    color: var(--color-black);
+}
+
+.datenschutzerklaerung-card a:hover,
+.datenschutzerklaerung-card a:focus-visible {
+    color: var(--color-gray);
+}
+
+@media (max-width: 768px) {
+    .datenschutzerklaerung {
+        padding: 1.5rem 1rem;
+    }
+
+    .datenschutzerklaerung-card {
+        padding: 1rem;
+    }
+}

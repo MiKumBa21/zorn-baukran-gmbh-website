@@ -15,6 +15,7 @@ import MobilCranes from './pages/Cranes/MobilCranes/MobilCranes'
 import QuickErectCranes from './pages/Cranes/QuickErectCranes/QuickErectCranes'
 import UsedCranes from './pages/UsedCranes/UsedCranes'
 import Impressum from './pages/Impressum/Impressum.tsx'
+import Datenschutzerklaerung from "./pages/Datenschutzerklärung/Datenschutzerklärung.tsx";
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 
 const router = createBrowserRouter([
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: 'Eurogru', element: <Eurogru /> },
       { path: 'Kontakt', element: <Contact /> },
       { path: 'Impressum', element: <Impressum /> },
+      { path: 'Datenschutzerklaerung', element: <Datenschutzerklaerung /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

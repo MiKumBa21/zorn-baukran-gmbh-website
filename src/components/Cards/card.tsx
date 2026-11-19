@@ -20,7 +20,7 @@ export function HorizontalCard(props: HorizontalCardProps) {
                         {props.imgSrc ? (<img
                             src={props.imgSrc}
                             className="horizontal-card-img"
-                            alt="Bild"
+                            alt={"Bild von einem " + props.title}
                             onClick={() => setIsImageOpen(true)}
                             loading="lazy"
                         />) : (<div className="image-placeholder">
@@ -101,7 +101,7 @@ export function BigCard(props: BigCardProps) {
         <div className='big-card-container'>
             <Link to={props.link} style={{textDecoration: "none"}}>
                 <div className="big-card-content">
-                    <img src={props.image} className="big-card-img" alt="Bild"></img>
+                    <img src={props.image} className="big-card-img" alt={props.title}></img>
                     <div className="big-card-body">
                         <h2 className="big-card-title">{props.title}</h2>
                         <div className='big-card-description'>{props.description}</div>

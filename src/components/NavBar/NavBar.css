@@ -104,3 +104,5 @@
 
     .dropdown-menu::before { display: none; }
 }
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown:focus-within .dropdown-menu { display: block; }

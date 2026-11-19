@@ -6,7 +6,7 @@ function UsedCranes() {
     return (
         <div>
             <title>Gebrauchte Krane | Zorn Baukran GmbH</title>
-            <Headline1 text='Gebrauchte Krane' subtitle="Zu Verkaufen sind:"></Headline1>
+            <Headline1 text='Gebrauchte Krane' subtitle="Zu verkaufen sind:"></Headline1>
 
             {cranesData.usedCranes.map(crane => (
                 <HorizontalCard key={crane.id} {...crane} showUsedCraneOptions/>
