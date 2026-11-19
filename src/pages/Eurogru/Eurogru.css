@@ -31,13 +31,13 @@
     box-sizing: border-box;
 }
 
-.eurogru-text-container img{
+.eurogru-text-container img {
     max-width: 30vw;
     margin: auto;
     object-fit: contain;
 }
 
-.eurogru-text-container p{
+.eurogru-text-container p {
     text-align: left;
     font-size: 1.3rem;
 }
@@ -46,11 +46,15 @@
 @media (max-width: 768px) {
     .eurogru-text-container {
         grid-template-columns: 1fr;
-        padding: 0 8vw;
+        padding: 1rem 8vw;
     }
 
     .eurogru-text-container img {
         max-width: 85vw;
         margin-bottom: 20px;
+    }
+
+    .eurogru-container {
+        margin-bottom: 65vw;
     }
 }

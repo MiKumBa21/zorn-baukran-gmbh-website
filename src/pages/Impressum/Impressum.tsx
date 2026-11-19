@@ -1,4 +1,4 @@
-
+import "./Impressum.css"
 
 function Impressum() {
     return(

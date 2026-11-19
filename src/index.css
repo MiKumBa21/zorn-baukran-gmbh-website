@@ -1,17 +1,13 @@
 
 :root {
   --color-gray: #5a5a5a;
-  --color-beige: #fff;
-  /*Untergeordneten Schriften*/
+  --color-leight-gray: #fff;
   --color-yellow: #ffbb00;
-  /*Aktzentfarbe*/
   --color-black: #1a1a1a;
-  /*Standardschriftfarbe*/
   --color-white: #f4f8ff;
-  /*Hintergrund*/
 
-  --font-heading: 'Bungee', sans-serif;
-  --font-text: 'Inter Variable', sans-serif;
+  --font-heading: 'Bungee', 'Arial Black', sans-serif;
+  --font-text: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --max-width: 90vw;
   --radius: 6px;
@@ -31,6 +27,22 @@ body {
   margin: 0;
   background-color: var(--color-white);
   font-family: var(--font-text);
+}
+
+img { max-width: 100%; }
+
+:focus-visible {
+  outline: 3px solid var(--color-black);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--color-yellow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media (max-width: 768px) {

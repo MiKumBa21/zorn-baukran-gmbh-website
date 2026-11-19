@@ -102,4 +102,5 @@
         margin-top: 1rem;
     }
 
+    .dropdown-menu::before { display: none; }
 }

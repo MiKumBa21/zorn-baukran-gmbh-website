@@ -8,7 +8,7 @@ function Cranes() {
             <title>Krane | Zorn Baukran GmbH</title>
 
                 <Headline1 text={"Krane"}></Headline1>
-                <div className="cranesContainer">
+                <div className="cranes-container">
 
                     <BigCard link="/Krane/Baukrane" image="/Images/Cranes/ConstCranes/Baukran.svg" title="Baukrane" description=""></BigCard>
 

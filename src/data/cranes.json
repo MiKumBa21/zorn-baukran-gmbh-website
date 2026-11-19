@@ -227,6 +227,19 @@
   ],
   "usedCranes": [
     {
+      "id": "ds245v",
+      "title": "DS 245V",
+      "marke": "Eurogru",
+      "maxLast": 1800,
+      "spitzenLast": 500,
+      "hakenhöhe": 16.2,
+      "ausladung": 24,
+      "imgSrc": "/Images/Cranes/QuickErectCranes/DS245V.svg",
+      "dataSheet": "/Datasheets/QuickErectCranes/DS245V.pdf",
+      "beschreibung": "Top gewartet und einsatzbereit",
+      "baujahr": "2022"
+    },
+    {
       "id": "used-lh26k",
       "title": "LH 26K",
       "marke": "Liebherr",

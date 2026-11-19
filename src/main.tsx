@@ -3,10 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import '@fontsource/bungee';
 import '@fontsource-variable/inter'
-import Layout from './components/Layout/Layout';
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ScrollToTop from './components/ScrollToTop'
+
+import Layout from './components/Layout/Layout'
 import ConstCranes from './pages/Cranes/ConstCranes/ConstCranes'
 import Contact from './pages/Contact/Contact'
 import Cranes from './pages/Cranes/Cranes'
@@ -15,22 +14,12 @@ import Home from './pages/Home/Home'
 import MobilCranes from './pages/Cranes/MobilCranes/MobilCranes'
 import QuickErectCranes from './pages/Cranes/QuickErectCranes/QuickErectCranes'
 import UsedCranes from './pages/UsedCranes/UsedCranes'
+import Impressum from './pages/Impressum/Impressum.tsx'
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
-import Impressum from "./pages/Impressum/Impressum.tsx";
-
-// eslint-disable-next-line react-refresh/only-export-components
-function RouterLayout() {
-  return (
-    <>
-      <ScrollToTop />
-      <Layout />
-    </>
-  )
-}
 
 const router = createBrowserRouter([
   {
-    element: <RouterLayout />,
+    element: <Layout />,
     children: [
       { index: true, element: <Home /> },
       { path: 'Krane', element: <Cranes /> },
@@ -40,14 +29,14 @@ const router = createBrowserRouter([
       { path: 'Gebrauchte-Krane', element: <UsedCranes /> },
       { path: 'Eurogru', element: <Eurogru /> },
       { path: 'Kontakt', element: <Contact /> },
+      { path: 'Impressum', element: <Impressum /> },
       { path: '*', element: <NotFoundPage /> },
-      { path: 'Impressum', element: <Impressum />}
     ],
   },
 ])
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>,
 )

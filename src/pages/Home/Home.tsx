@@ -14,7 +14,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="HeadImageLayer">
-                    <img src="/Images/PXL_20261027_143801426.jpg" alt="LKW"/>
+                    <img src="/Images/PXL_20261027_143801426.jpg" alt="LKW" fetchPriority="high"/>
                 </div>
             </div>
             <div className="ServicesContainer">

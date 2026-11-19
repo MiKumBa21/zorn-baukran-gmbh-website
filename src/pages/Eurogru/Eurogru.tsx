@@ -4,7 +4,7 @@ import "./Eurogru.css"
 
 function Eurogru() {
     return (
-        <div>
+        <div className="eurogru-container">
             <title>Eurogru | Zorn Baukran GmbH</title>
             <Headline1 text='Eurogru - Partner' subtitle="Offizieller Partner von Eurogru"></Headline1>
             <section className="eurogru-text-container">

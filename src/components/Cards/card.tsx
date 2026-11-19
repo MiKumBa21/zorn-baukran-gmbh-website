@@ -16,7 +16,7 @@ export function HorizontalCard(props: HorizontalCardProps) {
         <div>
             <div className="horizontal-card-container">
                 <div className="horizontal-card-body">
-                    <div className="col-md-4">
+                    <div>
                         {props.imgSrc ? (<img
                             src={props.imgSrc}
                             className="horizontal-card-img"
